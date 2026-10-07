@@ -1,0 +1,158 @@
+:root {
+  --bg: #ffffff;
+  --card-bg: #f8fafc; /* simple, consistent card background */
+  --accent: #0b5fff; /* link and interactive accent */
+  --heading-color: #0b3d91; /* separate color for large page headings (h1) */
+  --text: #111827; /* very dark gray for body text */
+  --muted: #6b7280; /* neutral gray for subtitles */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--card-bg);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+}
+
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  border: 1px solid #dfe7f1;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(11, 95, 255, 0.08);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ai-disclaimer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background: rgba(36,162,116,0.12);
+  color: var(--accent);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid rgba(36,162,116,0.28);
+  font-weight: 600;
+}
+
+.resume-link:hover {
+  background: rgba(36,162,116,0.18);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  transition: box-shadow 120ms ease;
+}
+
+.card-link:hover .card {
+  /* keep hover subtle and simple: slight elevation via soft shadow only */
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+/* Accessibility: visible focus states for keyboard users */
+a:focus-visible,
+:focus-visible {
+  outline: 3px solid rgba(11,95,255,0.18);
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+.card-link:focus-visible,
+.resume-link:focus-visible {
+  outline: 3px solid rgba(11,95,255,0.22);
+  outline-offset: 3px;
+}

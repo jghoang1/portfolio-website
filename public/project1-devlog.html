@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Python Autoclicker — Project Devlog</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <p><a href="./index.html">← Back</a></p>
+    <h1>Python Autoclicker</h1>
+    <p class="subtitle">
+      A desktop automation tool for repetitive keyboard/mouse input tasks.
+    </p>
+
+    <img
+      src="./images/python-autoclicker.png"
+      alt="MacOS Python Autoclicker desktop app window"
+      class="project-image"
+    />
+
+    <div class="project-meta">
+      <span class="tag">Python</span>
+      <span class="tag">Tkinter</span>
+      <span class="tag">PyAutoGUI</span>
+      <span class="tag">Automation</span>
+    </div>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        I built this project because I wanted a simple way to automate repetitive
+        mouse and keyboard actions without needing a full game or browser tool.
+        It started as a practical experiment in desktop automation, and it grew
+        into a little utility I could actually use.
+      </p>
+      <p>
+        A lot of the inspiration came from playing Roblox games with friends and
+        family. A lot of those games are built around repetitive tasks, and I
+        wanted a way to let the game keep running while I focused on something
+        else. I also liked the idea of having a tool that was easy to pause,
+        adjust, and control without much setup.
+      </p>
+      <p>
+        My first version was a script written in
+        <a href="https://www.autoitscript.com/site/" target="_blank" rel="noopener noreferrer">AutoIt</a>,
+        which worked for some simple tasks. But once I wanted more control over
+        timing and input sequences, I switched to Python and built a more
+        flexible version with PyAutoGUI, pynput, and Tkinter.
+      </p>
+      <p>
+        The end result is a lightweight desktop app that I actually use when I play games.
+        It is something I actually wanted to use, and it gave me a
+        chance to build a real tool around a problem I actually had.
+      </p>
+    </section>
+
+    <section>
+      <h2>Problem I Wanted to Solve</h2>
+      <p>
+        Repetitive clicking and timed input actions are easy to ignore at first,
+        but they get frustrating fast. I wanted something that could handle the
+        repetitive parts for me, while still giving me control over when it was
+        running and when it stopped.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Built</h2>
+      <ul>
+        <li>Configurable timer-based click actions</li>
+        <li>Play/pause controls with global hotkeys</li>
+        <li>Mouse position display inside the GUI</li>
+        <li>Modular row-based playback system for sequences and trigger types</li>
+        <li>Platform-aware input handling for desktop automation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <p>
+        Python, Tkinter, PyAutoGUI, pynput, and a modular row architecture for
+        managing automation actions. The app is structured so different
+        automation behaviors can be added without rewriting the main workflow.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Learned</h2>
+      <p>
+        This project taught me that even simple tools can get complicated fast,
+        especially when they interact with the operating system and user input.
+        I learned a lot about building a UI around real-world behavior, making
+        controls feel intuitive, and keeping the app flexible as it grows.
+      </p>
+    </section>
+
+    <section>
+      <h2>Project Link</h2>
+      <p><a href="https://github.com/jghoang1/python-autoclicker" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
+    </section>
+
+    <p class="ai-disclaimer">
+      AI draft: this page was drafted with GPT-4 and revised by me.
+    </p>
+  </div>
+</body>
+</html>
